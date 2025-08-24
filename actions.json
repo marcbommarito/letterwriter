@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Trustee Letter Uploader",
+  "name_for_model": "uploadTrusteeLetter",
+  "description_for_human": "Uploads trustee letters as PDFs directly into the campaign Google Drive folder and returns a clickable link.",
+  "description_for_model": "Send a trustee letter PDF (base64 encoded) to the Google Apps Script endpoint. The response includes the shareable fileUrl and markdownLink that should be displayed to the user.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://marcbommarito.github.io/letterwriter/openapi.yaml"
+  },
+  "logo_url": "https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png",
+  "contact_email": "YOUR_EMAIL@gmail.com",
+  "legal_info_url": "https://YOUR_WEBSITE_OR_PRIVACY_POLICY"
+}
