@@ -4,7 +4,7 @@ info:
   description: Upload trustee letters as PDFs directly into the campaign Google Drive folder.
   version: "1.0.0"
 servers:
-  - url: https://script.google.com/macros/s/AKfycbyNSb0chp3LgjKpvUNDsGNO3cHBKg01kVdd6rv8mqGrxOOzclvfY7qCfAvJeU8iz2LRkQ/exec
+  - url: https://script.google.com/macros/s/AKfycbyNSb0chp3LgjKpvUNDsGNO3cHBKg01kVdd6rv8mqGrxOOzclvfY7qCfAvJeU8iz2LRkQ/exec/
 paths:
   /:
     post:
