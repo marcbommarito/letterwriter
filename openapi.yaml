@@ -1,0 +1,44 @@
+openapi: 3.0.1
+info:
+  title: Trustee Letter Uploader
+  description: Upload trustee letters as PDFs directly into the campaign Google Drive folder.
+  version: "1.0.0"
+servers:
+  - url: https://script.google.com/macros/s/AKfycbyNSb0chp3LgjKpvUNDsGNO3cHBKg01kVdd6rv8mqGrxOOzclvfY7qCfAvJeU8iz2LRkQ/exec
+paths:
+  /:
+    post:
+      summary: Upload a trustee letter PDF
+      operationId: uploadTrusteeLetter
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                fileName:
+                  type: string
+                  example: TrusteeLetter_MarcB.pdf
+                fileContent:
+                  type: string
+                  description: Base64 encoded PDF content
+              required:
+                - fileName
+                - fileContent
+      responses:
+        "200":
+          description: Successful upload
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  fileId:
+                    type: string
+                  fileUrl:
+                    type: string
+                  markdownLink:
+                    type: string
